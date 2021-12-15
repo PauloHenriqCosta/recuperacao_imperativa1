@@ -3,8 +3,12 @@ const novoAparelho = require('./consertos');
 // Para testar importação
 // console.log(novoAparelho.listaObjetos[1]);
 
-function consertados () {
-    console.log("hellow world")
-};
+const celularesProntosProAbraco = novoAparelho.listaObjetos.filter (item => item.pronto == true)
+const celularesEmBanhoMaria = novoAparelho.listaObjetos.filter (item => item.pronto == false)
 
-consertados();
+
+console.log(celularesProntosProAbraco);
+console.log(celularesEmBanhoMaria);
+
+
+// reduce
